@@ -2,6 +2,7 @@
   "name": "biba-boba",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maximianac.github.io/universe/:id",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,6 +15,7 @@
     "axios": "^1.4.0",
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.7",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-rating": "^2.0.5",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
